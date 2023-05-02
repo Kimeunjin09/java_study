@@ -1,0 +1,27 @@
+
+public class VarEx2 {
+
+	public static void main(String[] args) {
+
+		// 상수 : 한번만 값을 저장 가능한 변수, final
+		
+		// 리터럴 : 그 자체로 값을 의미하는 것
+		// 리터럴의 접두사와 접미사
+		// 접미사 : 정수형L, 실수형f/d
+		// '' 문자형, "" 문자열
+		// byte타의 변수에 저장할수 있는 값의 범위 -128~127
+		
+		int score = 100;
+		score = 200;
+		
+		System.out.println(score);
+		
+		final int score2 = 100;
+		// score2 = 200; 에러! 상수라서 값을 변경할 수 없
+		
+		
+		
+		
+	}
+
+}
