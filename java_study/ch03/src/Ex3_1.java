@@ -141,6 +141,7 @@ public class Ex3_1 {
 		//     따라서 65 > 66 이니까 false
 		
 		// 문자열 비교에는 == 대신 equals()를 사용해야 한다!
+		// 대소문자를 구분 안하는 경우에는 equalsIgnoreCase 사용
 		
 		// 문자열을 만드는 1번방법
 		// ex) String str1 = "abc";  / String str2 = "abc";
