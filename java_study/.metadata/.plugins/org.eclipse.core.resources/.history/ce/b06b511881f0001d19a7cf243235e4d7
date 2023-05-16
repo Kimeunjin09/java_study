@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class Ex5_5 {
+
+	public static void main(String[] args) {
+		
+		// 3. 섞기(shuffle) : 배열의 요소의 순서를 반복해서 바꾼다.(숫자섞기, 로또번호 생성)
+		
+		// 예제
+		int [] numArr = {0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9};
+		System.out.println(Arrays.toString(numArr));
+		
+		for(int i = 0; i < 100; i++) {
+			int n = (int)(Math.random() * 10); // 0~9중의 한 값을 임의로 얻는다.
+			int tmp = numArr[0];
+			numArr[0] = numArr[n];
+			numArr[n] = tmp; // numArr[0]과 numArr[n]의 값을 서로 바꾼다.
+		}
+		
+		System.out.println(Arrays.toString(numArr));
+	}
+
+}
