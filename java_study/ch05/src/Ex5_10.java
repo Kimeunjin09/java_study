@@ -74,12 +74,13 @@ public class Ex5_10 {
 		for(int i = 0; i < words.length; i++) {
 			System.out.printf("Q%d. %s의 뜻은?", i + 1, words[i][0]);
 			
-			String tmp = scanner.nextLine();
+			String tmp = scanner.nextLine(); // 위에서 입력한 값을 받음
 			
 			if(tmp.equals(words[i][1])) {
-				System.out.printf("정답입니다.%n%n");
+				System.out.printf("정답입니다.%n%n"); // %n은 printf에서만 줄바꿈으로 쓰임
 			} else {
 				System.out.printf("틀렸습니다. 정답은 %s입니다.%n%n", words[i][1]);
+				// %s는 문자열출력 지시자
 			}
 		}
 		
