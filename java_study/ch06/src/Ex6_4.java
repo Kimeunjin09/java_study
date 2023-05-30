@@ -64,9 +64,11 @@ public class Ex6_4 {
 		// 하지만 하나의 참조변수로 여러가지 객체를 가리키는 건 불가능! -> 변수는 하나의 값만 저장가능하기때문
 		
 	
-		// 예제2
-		Tv t3 = new Tv();
+		// 예제2 -> 객체마다 별도의 저장공간을 가짐
+		Tv t3 = new Tv(); // Tv t1; t1 = new Tv();를 한문장으로
 		Tv t4 = new Tv();
+		
+		// 사용되고있는곳을 피 빈자리에 객체를 만들기 때문에 주소는 같을수가 없음
 		
 		System.out.println("t3의 channel값은" + t3.channel + "입니다.");
 		System.out.println("t4의 channel값은" + t4.channel + "입니다.");
